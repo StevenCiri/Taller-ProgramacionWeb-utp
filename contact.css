@@ -1,0 +1,242 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(213, 213, 213, 0.295);
+}
+
+h1 {
+    font-size: 65px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #FFD9E0;
+}
+
+header .logo {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #000000;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+header nav {
+    text-align: center;
+    padding-bottom: 40px;
+    margin-right: 30px;
+}
+header nav a {
+    display: inline-block;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: #6F7170;
+}
+
+/*Estilos para las listas*/
+nav li {
+    display: inline;
+    margin-right: 1%;
+}
+
+nav a {
+    color: #787878;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+nav ul {
+    padding: 0.5%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+/* Sección del mensaje "Encuéntranos" */
+#mensajes {
+    text-align: center;
+    color: #4d4b4b;
+    background-color: #eae8e8;
+    padding: 1%;
+}
+
+#mensajes p {
+    font-size: 20px;
+}
+
+/* Sección principal */
+main {
+    display: flex;
+    justify-content: space-evenly; 
+    width: 100%; 
+}
+
+/* Sección de la info contacto" */
+.contacto-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-contacto {
+    order: 2; 
+    width: 45%; 
+    margin: 2.5% 5%;
+}
+
+/* Asteriscos de color rosa */
+.rosa {
+    color: rgb(230, 129, 144);
+}
+
+/* Sección del formulario */
+.formulario {
+    order: 1; 
+    width: 50%;
+    margin: 2.5% 20%;
+}
+
+.formulario label {
+    display: block;
+    font-weight: bold;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"]{
+    width: 100%;
+    height: 25px;
+    padding: 1%;
+    margin-bottom: 1.5%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+.formulario textarea {
+    width: 100%;
+    height: 50px;
+    padding: 1%;
+    margin-bottom: 1.5%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.formulario button {
+    float: center;
+    background-color: #d298c0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #d298c0;
+}
+
+/* Pie de página */
+footer {
+    background-color: #2c2a2a;
+    color: #fff;
+    padding: 20px; 
+    text-align: center; 
+}
+
+#c1 {
+    display: flex;
+    justify-content: left; 
+    align-items: left; 
+}
+
+#c1-1 {
+    width: 50%; 
+    text-align: left;
+}
+
+#c1-2 {
+    width: 50%;
+    text-align: center;
+}
+
+#c1-2 ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 200px;
+}
+
+#c1-2 ul li {
+    margin-bottom: 10px;
+    color: rgb(141, 138, 138);
+}
+
+#c1-2 a {
+    color: rgb(144, 144, 144);
+    text-decoration: none;
+}
+
+#c1 h2,
+#c1-1 h2 {
+    text-align: left;
+    color: white;
+    font-size: 2em;
+}
+
+#c1-2 h2 {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    margin-left: 200px;
+}
+
+#c1 p,
+#c1-2 p {
+    font-size: 1em;
+}
+
+#c2 {
+    display: flex;
+    justify-content: left;
+}
+
+/* Estilo de enlaces */
+a {
+    color: #176ad0;
+    text-decoration: none;
+}

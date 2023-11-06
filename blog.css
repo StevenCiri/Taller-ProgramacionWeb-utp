@@ -1,0 +1,182 @@
+/* Estilo general */
+body {
+    font-family:  'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #FFD9E0;
+}
+
+header .logo {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #000000;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+header nav {
+    text-align: center;
+    padding-bottom: 40px;
+    margin-right: 30px;
+}
+header nav a {
+    display: inline-block;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: #6F7170;
+}
+
+nav {
+    text-align: right; 
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+/* Estilo de la tabla de publicaciones de blog */
+.blog-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #120b0b; 
+}
+
+.blog-table p {
+    color: #646464;
+}
+
+.blog-post {
+    padding: 20px;
+    text-align: center; 
+    border: 10px solid #fcd6d6;
+    transition: all 0.3s ease;
+    opacity: 0.6;
+    transform: scale(0.9);
+}
+
+.blog-post:hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.blog-title {
+    font-size: 55px; 
+    color: #fff;
+    margin-right: 900px;
+    margin-bottom: -45px;
+}
+
+.blog-content {
+    border-bottom: 10px solid #e6bebe; 
+}
+
+.blog-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; 
+    max-height: 250px; 
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #2c2a2a;
+    color: #fff;
+    padding: 20px; 
+    text-align: center; 
+}
+
+#c1 {
+    display: flex;
+    justify-content: left; 
+    align-items: left; 
+}
+
+#c1-1 {
+    width: 50%; 
+    text-align: left;
+}
+
+#c1-2 {
+    width: 50%;
+    text-align: center;
+}
+
+#c1-2 ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 200px;
+}
+
+#c1-2 ul li {
+    margin-bottom: 10px;
+    color: rgb(141, 138, 138);
+}
+
+#c1-2 a {
+    color: rgb(144, 144, 144);
+    text-decoration: none;
+}
+
+#c1 h2,
+#c1-1 h2 {
+    text-align: left;
+    color: white;
+    font-size: 2em;
+}
+
+#c1-2 h2 {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    margin-left: 200px;
+}
+
+#c1 p,
+#c1-2 p {
+    font-size: 1em;
+}
+
+#c2 {
+    display: flex;
+    justify-content: left;
+}
+
+/* Estilo de enlaces */
+a {
+    color: #176ad0;
+    text-decoration: none;
+}

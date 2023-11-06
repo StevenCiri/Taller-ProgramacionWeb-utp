@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTPastry</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="media/plgns catalogo/catalogo.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">UTPastry</p>
+            <!-- <img src="media/logo.jpg" alt="UtepiPastry" class="logo">  Logo imagen pero muy grande-->
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="nostros.html">Nosotros</a>                
+                <a href="catalogo.html">Catalogo</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+                </a>
+            </nav>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                        <img src="media/cart.png" id="img-carrito"/>
+                        <div id="carrito">
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+    
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="shop">
+        <div class="filtro-y-categorias">
+            <div class="filtro">
+                <input type="text" id="buscador" placeholder="Buscar...">
+                <button id="botonFiltrar">Filtrar</button>
+            </div>
+            <button id="botonBorrarFiltro">Borrar Filtro</button>
+            <div class="categorias">
+                <h2>Categorías</h2>
+                <ul>
+                    <li data-categoria="todos">Todos</li>
+                    <li data-categoria="tortas">Pasteles</li>
+                    <li data-categoria="galletas">Galletas</li>
+                    <li data-categoria="cupcakes">Cupcakes</li>
+                </ul>
+            </div>
+        </div>
+        <div class="catalog-container">
+            <div class="content">   
+                <div class="pagina" id="pagina1">
+                    <ul class="lista-productos">
+                        <p id="mensajeNoEncontrado" style="display: none;">No se encontraron productos.</p>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <a href="linkcata/tortaChocolate.php">
+                                    <img src="media/Productos/torta-chocolate-oreo.png" alt="torta chocolate con oreo">
+                                </a>
+                            </div>
+                            <h2>Torta de chocolate con oreo</h2>
+                            <p>S/100</p>
+                        </li>
+                        <li class="producto" data-categoria="cupcakes">
+                            <div class="imagen">
+                                <a href="linkcata/cupcakeFresa.html">
+                                    <img src="media/Productos/Cupcakes fresa.png" alt="Cupcake de fresa">
+                                </a>
+                            </div>
+                            <h2>Cupcake de fresa</h2>
+                            <p>S/20</p>
+                        </li>
+                        <li class="producto" data-categoria="galletas">
+                            <div class="imagen">
+                                <a href="linkcata/galletas.html">
+                                    <img src="media/Productos/Galleta con Chispas de Chocolate.png" alt="galleta chispas de chocolate">
+                                </a>
+                            </div>
+                            <h2>Galleta con Chispas de Chocolate</h2>
+                            <p>S/15</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <a href="linkcata/tortaAlianza.html">
+                                    <img src="media/Productos/torta-alianza.png" alt="torta alianza">
+                                </a>
+                            </div>
+                            <h2>Torta Alianza</h2>
+                            <p>S/120</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <a href="linkcata/tortaAnimalitos.html">
+                                    <img src="media/Productos/torta-animalitos.png" alt="torta de animalitos">
+                                </a>
+                            </div>
+                            <h2>Torta De animalitos</h2>
+                            <p>S/150</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <a href="linkcata/tortaShark.html">
+                                    <img src="media/Productos/torta-babysharktutururu.png" alt="torta babyshark">
+                                </a>
+                            </div>
+                            <h2>Torta de Baby Shark</h2>
+                            <p>S/170</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-blackpink.png" alt="torta blackpink">
+                            </div>
+                            <h2>Torta de Blackpink</h2>
+                            <p>S/150</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-camisa.png" alt="torta camisa">
+                            </div>
+                            <h2>Torta Camisa</h2>
+                            <p>S/120</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-compromiso.png" alt="torta compromiso">
+                            </div>
+                            <h2>Torta de Compromiso</h2>
+                            <p>S/120</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-contabilidad.png" alt="torta contabilidad">
+                            </div>
+                            <h2>Torta de Contabilidad</h2>
+                            <p>S/115</p>
+                        </li>
+                        <li class="producto" data-categoria="cupcakes">
+                            <div class="imagen">
+                                <img src="media/Productos/Cupcakes Two Bite.png" alt="cupcakes 2 sabores">
+                            </div>
+                            <h2>Cupcake de 2 sabores</h2>
+                            <p>S/25</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-corazon-rosa.png" alt="torta corazon rosa">
+                            </div>
+                            <h2>Torta de Corazón Rosa</h2>
+                            <p>S/110</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pagina" id="pagina2">
+                    <ul class="lista-productos">
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-covid.png" alt="torta covid">
+                            </div>
+                            <h2>Torta Covid</h2>
+                            <p>S/125</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-criolla.png" alt="torta criolla">
+                            </div>
+                            <h2>Torta de Criolla</h2>
+                            <p>S/120</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-criolla2.png" alt="torta criollo">
+                            </div>
+                            <h2>Torta de Criollo</h2>
+                            <p>S/120</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-diamadre.png" alt="torta dia de la madre">
+                            </div>
+                            <h2>Torta día de la Madre</h2>
+                            <p>S/125</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-enfermera.png" alt="torta de enfermera">
+                            </div>
+                            <h2>Torta de Enfermera</h2>
+                            <p>S/130</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-dulces.png" alt="torta dulce">
+                            </div>
+                            <h2>Torta de dulces</h2>
+                            <p>S/135</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-frutas.png" alt="torta frutas">
+                            </div>
+                            <h2>Torta de Fresa</h2>
+                            <p>S/125</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-gato.png" alt="torta gato">
+                            </div>
+                            <h2>Torta de forma de Gato</h2>
+                            <p>S/130</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-hellokity.png" alt="torta hellokitty">
+                            </div>
+                            <h2>Torta de Hello Kitty</h2>
+                            <p>S/120</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-lana.png" alt="torta lana">
+                            </div>
+                            <h2>Torta de Lana</h2>
+                            <p>S/140</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-marina.png" alt="torta marina">
+                            </div>
+                            <h2>Torta de la Marina</h2>
+                            <p>S/130</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-moto.png" alt="torta moto">
+                            </div>
+                            <h2>Torta de Moto</h2>
+                            <p>S/130</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pagina" id="pagina3">
+                    <ul class="lista-productos">
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-moto2.png" alt="torta moto deportiva">
+                            </div>
+                            <h2>Torta de Motocicleta deportiva</h2>
+                            <p>S/135</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-naruto.png" alt="torta naruto">
+                            </div>
+                            <h2>Torta de Naruto</h2>
+                            <p>S/145</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-ninja.png" alt="torta ninja">
+                            </div>
+                            <h2>Torta de Ninja Lego</h2>
+                            <p>S/120</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-perro.png" alt="torta perro">
+                            </div>
+                            <h2>Torta de Forma de Perro</h2>
+                            <p>S/135</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-peru.png" alt="torta selección">
+                            </div>
+                            <h2>Torta de la selección</h2>
+                            <p>S/120</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-pokemon.png" alt="torta pokémon">
+                            </div>
+                            <h2>Torta de Pokémon</h2>
+                            <p>S/145</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-sc.png" alt="torta sc">
+                            </div>
+                            <h2>Torta de Sporting Cristal</h2>
+                            <p>S/120</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-u.png" alt="torta u">
+                            </div>
+                            <h2>Torta de Universitario de Deportes</h2>
+                            <p>S/120</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="media/Productos/torta-u2.png" alt="torta sc">
+                            </div>
+                            <h2>Torta de Universitario de Deportes V2</h2>
+                            <p>S/130</p>
+                        </li>
+                        <li class="producto" data-categoria="tortas">
+                            <div class="imagen">
+                                <img src="\media\Productos\Tres-Leches-Durazno.jpg" alt="torta tres leches durazno">
+                            </div>
+                            <h2>Torta de Tres Leches de Durazno</h2>
+                            <p>S/100</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="paginacion">
+        <button id="pagina-anterior">Anterior</button>
+        <button id="pagina-siguiente">Siguiente</button>
+    </div>
+    <section id="third">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+                <h2>¡Cada Torta es única como tú!</h2>
+                <p>"¡Cada Torta es única como tú! En UtepiPastry, no solo horneamos tortas deliciosas, sino que también
+                    creamos obras de arte que reflejan tu estilo y personalidad. Cada torta está diseñada para ser tan
+                    única como tú, con ingredientes frescos y una atención meticulosa a los detalles. ¡Celebra tus
+                    momentos especiales con nuestras creaciones irresistibles!"</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.383060287677!2d-76.89472409956021!3d-12.019700311437994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c3c864ac48f5%3A0xed1bde4c798d786e!2sUTP!5e0!3m2!1ses-419!2spe!4v1694564427004!5m2!1ses-419!2spe"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div id="c1">
+                <div id="c1-1">
+                    <h2>UTPastry</h2>
+                    <p>Somos una pastelería dedicada a crear experiencias dulces y deliciosas para nuestros clientes. Nuestra pasión por la repostería nos impulsa a explorar nuevas tendencias y sabores, y a compartirlos contigo. En UTPastry, cada pastel es una obra maestra de sabor y diseño. ¡Permítenos endulzar tus momentos especiales!</p>
+                </div>
+                <div id="c1-2">
+                    <h2>ENLACES DE INTERÉS</h2>
+                    <ul>
+                        <li><a href="#">✔️ Suscríbete a nuestro Boletín</a></li>
+                        <li><a href="#">✔️ Términos y Condiciones</a></li>
+                        <li><a href="#">✔️ Servicio al Cliente</a></li>
+                        <li><a href="#">✔️ Libro de Reclamaciones</a></li>
+                        <li><a href="#">✔️ Trabaja con Nosotros</a></li>
+                        <li><a href="#">✔️ Catálogo UTPastry</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="c2">
+                <p>&copy; 2023 UTPastry. Todos los Derechos Reservados.</p>
+            </div>
+        </div>
+    <script src="media/plgns catalogo/catalogo.js"></script>
+    <script src="menuEffects.js"></script>
+</body>
+</html>

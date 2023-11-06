@@ -1,0 +1,53 @@
+#nosotros {
+    background-image: url(../media/Nostros/lineas.png);
+    background-size: 4%;
+    background-repeat: repeat;
+    padding: 20px;
+
+}
+
+header {
+    background-color: #FFD9E0;
+    position: sticky;
+
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#nosotros .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    height: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #faf1db;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+#nosotros .section.reverse {
+    flex-direction: row-reverse;
+    margin-right: 0;
+}
+
+#nosotros .left,
+#nosotros .right {
+    flex: 1;
+    padding: 10px;
+}
+
+#nosotros .right {
+    text-align: right;
+}
+
+#nosotros .image {
+    max-width: none;
+    height: 239px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
