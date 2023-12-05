@@ -4,7 +4,7 @@
 }
 
 .content {
-    border: 1px solid #bb36f0;
+    border: 1px solid #000000;
     background-color: rgb(255, 255, 255);
     display: grid;
     grid-gap: 20px;
@@ -115,4 +115,60 @@
 .categorias li.active {
     font-weight: bold;
     color: #333;
+}
+/* Estilo para los comentarios */
+.comentarios {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para el formulario de comentarios */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos para la tabla de comentarios */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4caf50;
+    color: white;
 }

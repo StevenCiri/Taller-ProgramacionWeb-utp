@@ -319,7 +319,8 @@ a {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto auto;
     grid-gap: 10px;
-    background-color: #ffd9e082;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -455,12 +456,4 @@ button {
 
 button:hover {
     background-color: #0056b3;
-}
-
-/* Estilo para los comentarios */
-#comentarios-container {
-    margin-top: 20px;
-}
-.comentario {
-    font-size: 12px;
 }

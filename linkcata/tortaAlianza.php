@@ -56,14 +56,14 @@ include("comentarios.php");
     <section id="purchasing-description">
         <div class="product-container">
             <div id="product-image" class="product-image">
-                <img id="zoomImage" src="../media/Productos/torta-chocolate-oreo.png" alt="torta chocolate con oreo">
+                <img id="zoomImage" src="../media/Productos/torta-alianza.png" alt="torta alianza">
             </div>
             <div class="product-details">
-                <h2>Torta de Chocolate con Oreo</h2>
-                <p>Nuestra Torta de Chocolate con Oreo es una obra maestra que combina la intensidad del chocolate más
-                    puro con la textura crujiente y el sabor inconfundible de las galletas Oreo. Cada rebanada es un
-                    festín para los sentidos, con capas de bizcocho de chocolate húmedo y decadente, rellenas de una
-                    generosa mezcla de trozos de Oreo y crema suave que se funde en tu paladar.</p>
+                <h2>Torta de Alianza Lima</h2>
+                <p>Esta torta es perfecta para celebrar victorias, cumpleaños, o simplemente para compartir momentos
+                    especiales con amigos y familiares. No importa si eres un apasionado seguidor de Alianza Lima o
+                    simplemente amante del fútbol, la torta Alianza Lima es una deliciosa forma de unir a las personas
+                    en torno a una pasión compartida.</p>
             </div>
         </div>
     </section>
@@ -92,7 +92,7 @@ include("comentarios.php");
 
 
                 <!-- Agrega un campo oculto para el ID de la página -->
-                <input type="hidden" name="id_pagina" value="1">
+                <input type="hidden" name="id_pagina" value="2">
 
                 <button type="submit">Enviar Comentario</button>
             </form>
@@ -128,55 +128,55 @@ include("comentarios.php");
         </section>
     </div>
 
-        <section id="third">
-            <div class="container">
-                <div class="img-container"></div>
-                <div class="texto">
-                    <h2>¡Cada Torta es única como tú!</h2>
-                    <p>"¡Cada Torta es única como tú! En UtepiPastry, no solo horneamos tortas deliciosas, sino que también
-                        creamos obras de arte que reflejan tu estilo y personalidad. Cada torta está diseñada para ser tan
-                        única como tú, con ingredientes frescos y una atención meticulosa a los detalles. ¡Celebra tus
-                        momentos especiales con nuestras creaciones irresistibles!"</p>
+    <section id="third">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+                <h2>¡Cada Torta es única como tú!</h2>
+                <p>"¡Cada Torta es única como tú! En UtepiPastry, no solo horneamos tortas deliciosas, sino que también
+                    creamos obras de arte que reflejan tu estilo y personalidad. Cada torta está diseñada para ser tan
+                    única como tú, con ingredientes frescos y una atención meticulosa a los detalles. ¡Celebra tus
+                    momentos especiales con nuestras creaciones irresistibles!"</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.383060287677!2d-76.89472409956021!3d-12.019700311437994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c3c864ac48f5%3A0xed1bde4c798d786e!2sUTP!5e0!3m2!1ses-419!2spe!4v1694564427004!5m2!1ses-419!2spe"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div id="c1">
+                <div id="c1-1">
+                    <h2>UTPastry</h2>
+                    <p>Somos una pastelería dedicada a crear experiencias dulces y deliciosas para nuestros clientes.
+                        Nuestra pasión por la repostería nos impulsa a explorar nuevas tendencias y sabores, y a
+                        compartirlos contigo. En UTPastry, cada pastel es una obra maestra de sabor y diseño.
+                        ¡Permítenos endulzar tus momentos especiales!</p>
+                </div>
+                <div id="c1-2">
+                    <h2>ENLACES DE INTERÉS</h2>
+                    <ul>
+                        <li><a href="#">✔️ Suscríbete a nuestro Boletín</a></li>
+                        <li><a href="#">✔️ Términos y Condiciones</a></li>
+                        <li><a href="#">✔️ Servicio al Cliente</a></li>
+                        <li><a href="#">✔️ Libro de Reclamaciones</a></li>
+                        <li><a href="#">✔️ Trabaja con Nosotros</a></li>
+                        <li><a href="#">✔️ Catálogo UTPastry</a></li>
+                    </ul>
                 </div>
             </div>
-        </section>
-
-        <section id="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.383060287677!2d-76.89472409956021!3d-12.019700311437994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c3c864ac48f5%3A0xed1bde4c798d786e!2sUTP!5e0!3m2!1ses-419!2spe!4v1694564427004!5m2!1ses-419!2spe"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-
-        <footer>
-            <div class="container">
-                <div id="c1">
-                    <div id="c1-1">
-                        <h2>UTPastry</h2>
-                        <p>Somos una pastelería dedicada a crear experiencias dulces y deliciosas para nuestros clientes.
-                            Nuestra pasión por la repostería nos impulsa a explorar nuevas tendencias y sabores, y a
-                            compartirlos contigo. En UTPastry, cada pastel es una obra maestra de sabor y diseño.
-                            ¡Permítenos endulzar tus momentos especiales!</p>
-                    </div>
-                    <div id="c1-2">
-                        <h2>ENLACES DE INTERÉS</h2>
-                        <ul>
-                            <li><a href="#">✔️ Suscríbete a nuestro Boletín</a></li>
-                            <li><a href="#">✔️ Términos y Condiciones</a></li>
-                            <li><a href="#">✔️ Servicio al Cliente</a></li>
-                            <li><a href="#">✔️ Libro de Reclamaciones</a></li>
-                            <li><a href="#">✔️ Trabaja con Nosotros</a></li>
-                            <li><a href="#">✔️ Catálogo UTPastry</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="c2">
-                    <p>&copy; 2023 UTPastry. Todos los Derechos Reservados.</p>
-                </div>
+            <div id="c2">
+                <p>&copy; 2023 UTPastry. Todos los Derechos Reservados.</p>
             </div>
-            <script src="baseproductos.js"></script>
-            <script src="../menuEffects.js"></script>
-        </footer>
+        </div>
+        <script src="baseproductos.js"></script>
+        <script src="../menuEffects.js"></script>
+    </footer>
 </body>
 
 </html>
