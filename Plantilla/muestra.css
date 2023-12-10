@@ -119,54 +119,14 @@ button:hover{
 #encabezado a:hover {
     color: #6F7170;
 }
+/* Su codigo */
 
 
 
-#nosotros {
-    background-image: url(../media/Nostros/lineas.png);
-    background-size: 4%;
-    background-repeat: repeat;
-    padding: 20px;
 
-}
 
-#nosotros .section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border: 1px solid #ccc;
-    height: 200px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #faf1db;
-    border-radius: 10px;
-    margin-bottom: 20px;
 
-}
-
-#nosotros .section.reverse {
-    flex-direction: row-reverse;
-    margin-right: 0;
-}
-
-#nosotros .left,
-#nosotros .right {
-    flex: 1;
-    padding: 10px;
-}
-
-#nosotros .right {
-    text-align: right;
-}
-
-#nosotros .image {
-    max-width: none;
-    height: 239px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 20px;
-}
-
+/* Fin de su codigo */
 
 footer{
     height: 350px;
@@ -209,32 +169,6 @@ footer .container{
     border-top: .1rem solid black;
     display: flex;
     justify-content: flex-start;
-}
-
-#third .container{
-    position: relative;
-    width: 100%;
-    height: 70vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.1),
-        rgba(0,0,0,0.1)
-        )
-        ,url(../media/exhibicion-4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    overflow: hidden;
-    text-align: center;
-    
-}
-#third .texto{
-    font-size:  1.3em;
-    display: flex;
-    color: white;
-    flex-direction: column;
-    align-items: center;
 }
 
 
