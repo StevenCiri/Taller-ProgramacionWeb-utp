@@ -1,3 +1,7 @@
+<?php
+include("conexion.php");
+include("comentarios.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,21 +15,21 @@
 
 <body>
     <header>
+        <h1 class="nombre-sitio">Tienda <span> UTPastry </span></h1>
+    </header>
+    <div id="encabezado">
         <div class="container">
-            <p class="logo">UTPastry</p>
-            <!-- <img src="media/logo.jpg" alt="UtepiPastry" class="logo">  Logo imagen pero muy grande-->
             <nav>
                 <a href="../index.html">Home</a>
                 <a href="../nostros.html">Nosotros</a>
                 <a href="../catalogo.html">Catalogo</a>
                 <a href="../blog.html">Blog</a>
                 <a href="../contacto.html">Contacto</a>
-                </a>
             </nav>
             <div class="two columns u-pull-right">
                 <ul>
                     <li class="submenu">
-                        <img src="../media/cart.png" id="img-carrito" />
+                        <img src="media/cart.png" id="img-carrito" />
                         <div id="carrito">
                             <table id="lista-carrito" class="u-full-width">
                                 <thead>
@@ -46,49 +50,89 @@
                 </ul>
             </div>
         </div>
-    </header>
+    </div>
 
 
     <section id="purchasing-description">
         <div class="product-container">
             <div id="product-image" class="product-image">
-                <img id="zoomImage" src="../media/Productos/torta-alianza.png" alt="torta alianza">
+                <img id="zoomImage" src="../media/Productos/torta-perro.png" alt="torta compromiso">
             </div>
             <div class="product-details">
-                <h2>Torta de Alianza Lima</h2>
-                <p>Esta torta es perfecta para celebrar victorias, cumpleaños, o simplemente para compartir momentos
-                    especiales con amigos y familiares. No importa si eres un apasionado seguidor de Alianza Lima o
-                    simplemente amante del fútbol, la torta Alianza Lima es una deliciosa forma de unir a las personas
-                    en torno a una pasión compartida.</p>
+                <h2>Torta en Forma de Perro: "Amor Peludo en Cada Bocado</h2>
+                <p>Deleita tus sentidos con nuestra encantadora Torta en Forma de Perro, una creación que rinde homenaje a la lealtad y la alegría de nuestros amigos caninos en cada delicioso detalle.
+
+                    La base de la torta, magistralmente esculpida, cobra vida con la forma simpática de un perrito cariñoso. Cada capa de bizcocho, tierna y esponjosa, ofrece una experiencia de sabor que refleja la dulzura y diversidad de la amistad perruna.
+
+                    El exterior de la torta está cubierto con un glaseado suave que imita el pelaje brillante de un perro. Detalles carismáticos, como ojos juguetones, un hocico encantador y orejas expresivas, completan la apariencia adorable de nuestro amigo peludo. Puedes personalizar los colores y rasgos para que se asemejen a la raza o el perro especial que deseas representar.</p>
             </div>
         </div>
     </section>
-    
+
     <div class="comentarios">
         <section>
             <h3>Valoraciones</h3>
-    
-            <form action="conexion.php" method="post">
+
+            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required><br><br>
-    
+
                 <label for="comentario">Comentario:</label><br>
                 <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
-    
+
                 <label for="puntuacion">Puntuación (1-5 estrellas):</label><br>
                 <select id="puntuacion" name="puntuacion" required>
-                    <option value="1">1 estrella</option>
-                    <option value="2">2 estrellas</option>
-                    <option value="3">3 estrellas</option>
-                    <option value="4">4 estrellas</option>
-                    <option value="5">5 estrellas</option>
+
+                    <option value="1">⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+
                 </select><br><br>
-    
+
+
+                <!-- Agrega un campo oculto para el ID de la página -->
+                <input type="hidden" name="id_pagina" value="28">
+
                 <button type="submit">Enviar Comentario</button>
             </form>
+
             <!-- Caja para mostrar las valoraciones y comentarios -->
             <div id="comentarios-container">
-    
+                <table>
+                    <tr>
+                        <!-- <th><h1>ID</h1></th> -->
+                        <th>
+                            <h4>Nombre</h4>
+                        </th>
+                        <th>
+                            <h4>Comentario</h4>
+                        </th>
+                        <th>
+                            <h4>Puntuación</h4>
+                        </th>
+                        <th>
+                            <h4>Fecha de Publicación</h4>
+                        </th>
+                    </tr>
+
+                    <?php
+                    if ($result) {
+                        while ($colum = mysqli_fetch_array($result)) {
+                            echo "<tr>";
+                            // echo "<td><h2>" . $colum['id'] . "</h2></td>";
+                            echo "<td><h4>" . $colum['nombre'] . "</h4></td>";
+                            echo "<td><h4>" . $colum['comentario'] . "</h4></td>";
+                            echo "<td><h4>" . $colum['puntuacion'] . "</h4></td>";
+                            echo "<td><h4>" . $colum['fecha_publicacion'] . "</h4></td>";
+                            echo "</tr>";
+                        }
+                    } else {
+                        echo "<tr><td colspan='5'>No hay comentarios disponibles.</td></tr>";
+                    }
+                    ?>
+                </table>
             </div>
         </section>
     </div>
@@ -107,10 +151,7 @@
     </section>
 
     <section id="map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.383060287677!2d-76.89472409956021!3d-12.019700311437994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c3c864ac48f5%3A0xed1bde4c798d786e!2sUTP!5e0!3m2!1ses-419!2spe!4v1694564427004!5m2!1ses-419!2spe"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.383060287677!2d-76.89472409956021!3d-12.019700311437994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c3c864ac48f5%3A0xed1bde4c798d786e!2sUTP!5e0!3m2!1ses-419!2spe!4v1694564427004!5m2!1ses-419!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <footer>

@@ -1,3 +1,7 @@
+<?php
+include("conexion.php");
+include("comentarios.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,21 +15,21 @@
 
 <body>
     <header>
+        <h1 class="nombre-sitio">Tienda <span> UTPastry </span></h1>
+    </header>
+    <div id="encabezado">
         <div class="container">
-            <p class="logo">UTPastry</p>
-            <!-- <img src="media/logo.jpg" alt="UtepiPastry" class="logo">  Logo imagen pero muy grande-->
             <nav>
                 <a href="../index.html">Home</a>
                 <a href="../nostros.html">Nosotros</a>
                 <a href="../catalogo.html">Catalogo</a>
                 <a href="../blog.html">Blog</a>
                 <a href="../contacto.html">Contacto</a>
-                </a>
             </nav>
             <div class="two columns u-pull-right">
                 <ul>
                     <li class="submenu">
-                        <img src="../media/cart.png" id="img-carrito" />
+                        <img src="media/cart.png" id="img-carrito" />
                         <div id="carrito">
                             <table id="lista-carrito" class="u-full-width">
                                 <thead>
@@ -46,49 +50,88 @@
                 </ul>
             </div>
         </div>
-    </header>
-
+    </div>
 
     <section id="purchasing-description">
         <div class="product-container">
             <div id="product-image" class="product-image">
-                <img id="zoomImage" src="../media/Productos/Cupcakes fresa.png" alt="cupcake">
+                <img id="zoomImage" src="../media/Productos/torta-diamadre.png" alt="torta compromiso">
             </div>
             <div class="product-details">
-                <h2>Cupcake de Fresa: El Placer en Cada Bocado</h2>
-                <p>Nuestro cupcake de fresa es un verdadero deleite para los amantes de los sabores frescos y frutales.
-                    Cada mordisco es un estallido de sabor que te transporta a un campo de fresas bañado por el sol.
-                    Este pequeño postre es una obra maestra culinaria que combina la esencia de la fresa con una
-                    suavidad inigualable.</p>
+                <h2>Torta del Día de la Madre</h2>
+                <p>Celebra el amor incondicional y la dedicación infinita de mamá con nuestra sublime Torta del Día de la Madre, una creación que combina la elegancia con el cariño en cada bocado.
+
+                    La base de la torta, tierna y esponjosa como el abrazo de una madre, se fusiona con sabores delicados y reconfortantes. Desde capas de vainilla que evocan la suavidad de su ternura hasta rellenos de fresa que reflejan la dulzura de sus cuidados, cada porción es un tributo a la madre que lo merece todo.
+
+                    La decoración de la torta es un despliegue de belleza maternal. Un glaseado suave, como una caricia dulce, envuelve la torta, adornada con detalles elegantes como flores comestibles y toques de color que simbolizan la alegría que una madre aporta a la vida. Puedes personalizarla con un mensaje cariñoso o incluso con el nombre especial que le das a tu mamá.</p>
             </div>
         </div>
     </section>
-    
+
     <div class="comentarios">
         <section>
             <h3>Valoraciones</h3>
-    
-            <form action="conexion.php" method="post">
+
+            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required><br><br>
-    
+
                 <label for="comentario">Comentario:</label><br>
                 <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
-    
+
                 <label for="puntuacion">Puntuación (1-5 estrellas):</label><br>
                 <select id="puntuacion" name="puntuacion" required>
+
                     <option value="1">1 estrella</option>
                     <option value="2">2 estrellas</option>
                     <option value="3">3 estrellas</option>
                     <option value="4">4 estrellas</option>
                     <option value="5">5 estrellas</option>
+
                 </select><br><br>
-    
+
+
+                <!-- Agrega un campo oculto para el ID de la página -->
+                <input type="hidden" name="id_pagina" value="16">
+
                 <button type="submit">Enviar Comentario</button>
             </form>
+
             <!-- Caja para mostrar las valoraciones y comentarios -->
             <div id="comentarios-container">
-    
+                <table>
+                    <tr>
+                        <!-- <th><h1>ID</h1></th> -->
+                        <th>
+                            <h4>Nombre</h4>
+                        </th>
+                        <th>
+                            <h4>Comentario</h4>
+                        </th>
+                        <th>
+                            <h4>Puntuación</h4>
+                        </th>
+                        <th>
+                            <h4>Fecha de Publicación</h4>
+                        </th>
+                    </tr>
+
+                    <?php
+                    if ($result) {
+                        while ($colum = mysqli_fetch_array($result)) {
+                            echo "<tr>";
+                            // echo "<td><h2>" . $colum['id'] . "</h2></td>";
+                            echo "<td><h4>" . $colum['nombre'] . "</h4></td>";
+                            echo "<td><h4>" . $colum['comentario'] . "</h4></td>";
+                            echo "<td><h4>" . $colum['puntuacion'] . "</h4></td>";
+                            echo "<td><h4>" . $colum['fecha_publicacion'] . "</h4></td>";
+                            echo "</tr>";
+                        }
+                    } else {
+                        echo "<tr><td colspan='5'>No hay comentarios disponibles.</td></tr>";
+                    }
+                    ?>
+                </table>
             </div>
         </section>
     </div>
@@ -107,10 +150,7 @@
     </section>
 
     <section id="map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.383060287677!2d-76.89472409956021!3d-12.019700311437994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c3c864ac48f5%3A0xed1bde4c798d786e!2sUTP!5e0!3m2!1ses-419!2spe!4v1694564427004!5m2!1ses-419!2spe"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.383060287677!2d-76.89472409956021!3d-12.019700311437994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c3c864ac48f5%3A0xed1bde4c798d786e!2sUTP!5e0!3m2!1ses-419!2spe!4v1694564427004!5m2!1ses-419!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <footer>

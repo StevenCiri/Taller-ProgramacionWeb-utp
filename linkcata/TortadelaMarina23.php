@@ -51,23 +51,30 @@ include("comentarios.php");
             </div>
         </div>
     </div>
+    </header>
 
 
     <section id="purchasing-description">
         <div class="product-container">
             <div id="product-image" class="product-image">
-                <img id="zoomImage" src="../media/Productos/torta-alianza.png" alt="torta alianza">
+                <img id="zoomImage" src="../media/Productos/torta-marina.png" alt="torta compromiso">
             </div>
             <div class="product-details">
-                <h2>Torta de Alianza Lima</h2>
-                <p>Esta torta es perfecta para celebrar victorias, cumpleaños, o simplemente para compartir momentos
-                    especiales con amigos y familiares. No importa si eres un apasionado seguidor de Alianza Lima o
-                    simplemente amante del fútbol, la torta Alianza Lima es una deliciosa forma de unir a las personas
-                    en torno a una pasión compartida.</p>
+                <h2>Torta Temática de la Marina: "Navegando en Sabores"</h2>
+                <p>
+                    Descripción de la Torta Temática de la Marina: "Navegando en Sabores"
+
+                    Embarca en una travesía culinaria con nuestra majestuosa Torta Temática de la Marina, una creación que rinde homenaje a la fuerza y la aventura del océano en cada delicioso bocado.
+
+                    La base de la torta, tallada con precisión, captura la esencia de la marina, con detalles que evocan la elegancia de los barcos y la vastedad del mar. Las capas interiores ofrecen una combinación de sabores audaces y ricos, desde un exquisito chocolate hasta un relleno de crema de almendra, creando una experiencia gustativa que refleja la grandeza del océano.
+
+                    El exterior de la torta está envuelto en un glaseado que imita las olas del mar. Detalles náuticos, como anclas comestibles y timones, añaden autenticidad y un toque marinero a la creación. Puedes elegir colores inspirados en el azul profundo del océano para darle vida a la decoración.
+
+                    En la cima, una figura tridimensional de un barco o un timón, modelada en azúcar o fondant, se erige como la pieza central. Detalles adicionales, como banderas ondeando o gaviotas esculpidas, completan la escena marítima.</p>
             </div>
         </div>
     </section>
-    
+
     <div class="comentarios">
         <section>
             <h3>Valoraciones</h3>
@@ -92,7 +99,7 @@ include("comentarios.php");
 
 
                 <!-- Agrega un campo oculto para el ID de la página -->
-                <input type="hidden" name="id_pagina" value="3">
+                <input type="hidden" name="id_pagina" value="23">
 
                 <button type="submit">Enviar Comentario</button>
             </form>
@@ -102,10 +109,18 @@ include("comentarios.php");
                 <table>
                     <tr>
                         <!-- <th><h1>ID</h1></th> -->
-                        <th><h4>Nombre</h4></th>
-                        <th><h4>Comentario</h4></th>
-                        <th><h4>Puntuación</h4></th>
-                        <th><h4>Fecha de Publicación</h4></th>
+                        <th>
+                            <h4>Nombre</h4>
+                        </th>
+                        <th>
+                            <h4>Comentario</h4>
+                        </th>
+                        <th>
+                            <h4>Puntuación</h4>
+                        </th>
+                        <th>
+                            <h4>Fecha de Publicación</h4>
+                        </th>
                     </tr>
 
                     <?php
@@ -142,10 +157,7 @@ include("comentarios.php");
     </section>
 
     <section id="map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.383060287677!2d-76.89472409956021!3d-12.019700311437994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c3c864ac48f5%3A0xed1bde4c798d786e!2sUTP!5e0!3m2!1ses-419!2spe!4v1694564427004!5m2!1ses-419!2spe"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.383060287677!2d-76.89472409956021!3d-12.019700311437994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c3c864ac48f5%3A0xed1bde4c798d786e!2sUTP!5e0!3m2!1ses-419!2spe!4v1694564427004!5m2!1ses-419!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <footer>
