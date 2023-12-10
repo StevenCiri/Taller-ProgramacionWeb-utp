@@ -24,10 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $comentario = mysqli_real_escape_string($connection, $_POST["comentario"]);
     $puntuacion = mysqli_real_escape_string($connection, $_POST["puntuacion"]);
 
-    // Establecer la zona horaria a "America/Lima"
-    date_default_timezone_set('America/Lima');
-
-    // Obtener la fecha y hora actual
+    // Obtener la fecha actual
     $fecha_publicacion = date('Y-m-d H:i:s');
 
     $instruccion_SQL = "INSERT INTO comentarios (nombre, comentario, puntuacion, id_pagina, fecha_publicacion) VALUES ('$nombre', '$comentario', '$puntuacion', '" . obtenerIdPagina($connection) . "', '$fecha_publicacion')";

@@ -147,7 +147,7 @@ select {
 }
 
 button {
-    background-color: #fac1ab;
+    background-color: #4caf50;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -169,6 +169,6 @@ th, td {
 }
 
 th {
-    background-color: #f89b8f;
+    background-color: #4caf50;
     color: white;
 }

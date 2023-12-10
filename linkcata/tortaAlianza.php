@@ -15,21 +15,21 @@ include("comentarios.php");
 
 <body>
     <header>
-        <h1 class="nombre-sitio">Tienda <span> UTPastry </span></h1>
-    </header>
-    <div id="encabezado">
         <div class="container">
+            <p class="logo">UTPastry</p>
+            <!-- <img src="media/logo.jpg" alt="UtepiPastry" class="logo">  Logo imagen pero muy grande-->
             <nav>
                 <a href="../index.html">Home</a>
                 <a href="../nostros.html">Nosotros</a>
                 <a href="../catalogo.html">Catalogo</a>
                 <a href="../blog.html">Blog</a>
                 <a href="../contacto.html">Contacto</a>
+                </a>
             </nav>
             <div class="two columns u-pull-right">
                 <ul>
                     <li class="submenu">
-                        <img src="media/cart.png" id="img-carrito" />
+                        <img src="../media/cart.png" id="img-carrito" />
                         <div id="carrito">
                             <table id="lista-carrito" class="u-full-width">
                                 <thead>
@@ -50,7 +50,7 @@ include("comentarios.php");
                 </ul>
             </div>
         </div>
-    </div>
+    </header>
 
 
     <section id="purchasing-description">
@@ -92,7 +92,7 @@ include("comentarios.php");
 
 
                 <!-- Agrega un campo oculto para el ID de la página -->
-                <input type="hidden" name="id_pagina" value="3">
+                <input type="hidden" name="id_pagina" value="2">
 
                 <button type="submit">Enviar Comentario</button>
             </form>

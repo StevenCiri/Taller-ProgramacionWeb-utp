@@ -15,21 +15,21 @@ include("comentarios.php");
 
 <body>
     <header>
-        <h1 class="nombre-sitio">Tienda <span> UTPastry </span></h1>
-    </header>
-    <div id="encabezado">
         <div class="container">
+            <p class="logo">UTPastry</p>
+            <!-- <img src="media/logo.jpg" alt="UtepiPastry" class="logo">  Logo imagen pero muy grande-->
             <nav>
                 <a href="../index.html">Home</a>
                 <a href="../nostros.html">Nosotros</a>
                 <a href="../catalogo.html">Catalogo</a>
                 <a href="../blog.html">Blog</a>
                 <a href="../contacto.html">Contacto</a>
+                </a>
             </nav>
             <div class="two columns u-pull-right">
                 <ul>
                     <li class="submenu">
-                        <img src="media/cart.png" id="img-carrito" />
+                        <img src="../media/cart.png" id="img-carrito" />
                         <div id="carrito">
                             <table id="lista-carrito" class="u-full-width">
                                 <thead>
@@ -50,9 +50,7 @@ include("comentarios.php");
                 </ul>
             </div>
         </div>
-    </div>
-
-
+    </header>
 
 
     <section id="purchasing-description">
@@ -104,18 +102,10 @@ include("comentarios.php");
                 <table>
                     <tr>
                         <!-- <th><h1>ID</h1></th> -->
-                        <th>
-                            <h4>Nombre</h4>
-                        </th>
-                        <th>
-                            <h4>Comentario</h4>
-                        </th>
-                        <th>
-                            <h4>Puntuación</h4>
-                        </th>
-                        <th>
-                            <h4>Fecha de Publicación</h4>
-                        </th>
+                        <th><h4>Nombre</h4></th>
+                        <th><h4>Comentario</h4></th>
+                        <th><h4>Puntuación</h4></th>
+                        <th><h4>Fecha de Publicación</h4></th>
                     </tr>
 
                     <?php
@@ -137,7 +127,7 @@ include("comentarios.php");
             </div>
         </section>
     </div>
-
+    
     <section id="third">
         <div class="container">
             <div class="img-container"></div>
@@ -152,7 +142,10 @@ include("comentarios.php");
     </section>
 
     <section id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.383060287677!2d-76.89472409956021!3d-12.019700311437994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c3c864ac48f5%3A0xed1bde4c798d786e!2sUTP!5e0!3m2!1ses-419!2spe!4v1694564427004!5m2!1ses-419!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.383060287677!2d-76.89472409956021!3d-12.019700311437994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c3c864ac48f5%3A0xed1bde4c798d786e!2sUTP!5e0!3m2!1ses-419!2spe!4v1694564427004!5m2!1ses-419!2spe"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <footer>

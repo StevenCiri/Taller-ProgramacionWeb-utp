@@ -1,123 +1,32 @@
-body{
+body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    background-color: rgba(255, 228, 196, 0.295);
 }
 
-h1{ 
+h1 {
     font-size: 3.5em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    font-family: 'Dancing Script', cursive;
-}
-h2{ font-size: 2.7em;
-    font-family: 'Dancing Script', cursive;}
-h3{ font-size: 2em;}
-p{ font-size: 1.25em;}
-ul{ list-style: none;}
-li{ font-size: 1.25em;}
-
-button{
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 10px 30px;
-    border-radius: 10px;
-    border: 1px solid rgba(0,0,0,0.5);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    color: white;
-    background-color: aquamarine;
-}
-button:hover{
-    background-color: aqua;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.nombre-sitio {
-    margin-top: 2rem;
-    text-align: center;
-
-}
-.nombre-sitio span {
-    color: #e182a8;
+h2 {
+    font-size: 2.7em;
 }
 
-
-
-.submenu {
-    position: relative;
+h3 {
+    font-size: 2em;
 }
 
-.submenu #carrito{
-    display: none;
-}
-.submenu:hover #carrito{
-    display: block;
-    position: absolute;
-    right:0;
-
-    top:100%;
-    z-index: 1;
-    background-color: rgb(240,240,240);
-    padding: 20px;
-    min-height: 400px;
-    min-width: 300px;
-}
-.agregar-carrito {
-    margin:10px 0;
-}
-.borrar-curso {
-    background-color: red;
-    border-radius: 50%;
-    padding: 5px 10px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-.vacio {
-    padding: 10px;
-    background-color: crimson;
-    text-align: center;
-    border-radius: 10px;
-    color: white;
+p {
+    font-size: 1.25em;
 }
 
-#encabezado {
-    background-color: rgb(240,240,240);
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    border-top: .1rem solid rgb(120,120,120);
-    border-bottom: .1rem solid rgb(120,120,120);
-
+ul {
+    list-style: none;
 }
 
-
-#encabezado .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-}
-
-#encabezado nav {
-    text-align: center;
-}
-#encabezado nav a {
-    display: inline-block;
-    margin-left: 15px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
-
-#encabezado a {
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
-
-#encabezado a:hover {
-    color: #6F7170;
+li {
+    font-size: 1.25em;
 }
 
 button {
@@ -173,6 +82,13 @@ button:hover {
     color: white;
 }
 
+header {
+    background-color: #FFD9E0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
 
 header .logo {
     font-size: 2.5em;
@@ -191,7 +107,12 @@ header .container {
     z-index: 1;
 }
 
-
+header nav {
+    flex-grow: 1;
+    text-align: center;
+    padding-bottom: 40px;
+    margin-right: 30px;
+}
 header nav a {
     display: inline-block;
     margin-left: 15px;
@@ -233,8 +154,7 @@ section#shop {
     max-width: 220px;
     max-height: 360px;
     width: auto; 
-    height: auto;
-    text-align: center;
+    height: auto;   
 }
 .product-item {
     border: 2px solid #ff8787;
@@ -261,7 +181,6 @@ section#shop {
 .product-item h3 {
     margin-top: 10px;
 }
-
 #shop {
     display: flex; 
     align-items: flex-start; 
@@ -273,7 +192,7 @@ section#shop {
     margin-left: 400px;
     width: 400px;
     height: 800px;
-    border-radius: 30px;
+    border-radius: 20px;
 
 }
 #navg {
@@ -359,29 +278,31 @@ footer {
     justify-content: left;
 }
 
+a {
+    color: #176ad0;
+    text-decoration: none;
+}
 @media (min-width: 850px){
-    #encabezado{
+    header{
+        position: fixed;
         width: 100%;
     }
 
-    #encabezado .container{
+    header .container{
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
     }
-    #encabezado nav{
+    header nav{
         flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
     }
-    #encabezado nav a{
+    header nav a{
         justify-content: center;
         padding-right: 20px;
     }
-
-
-    
-    #first h1{
-        font-size: 5em;
-    }
-    #first button{
-        font-size: 2.5em;
-    }
+    /* header .logo{
+        padding: 0 0 0 20px;
+        height: 60px;
+    } */
 }
