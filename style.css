@@ -3,13 +3,9 @@ body{
     margin: 0;
 }
 
-h1{ 
-    font-size: 3.5em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    font-family: 'Dancing Script', cursive;
-}
-h2{ font-size: 2.7em;
-    font-family: 'Dancing Script', cursive;}
+h1{ font-size: 3.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);}
+h2{ font-size: 2.7em;}
 h3{ font-size: 2em;}
 p{ font-size: 1.25em;}
 ul{ list-style: none;}
@@ -23,21 +19,14 @@ button{
     border: 1px solid rgba(0,0,0,0.5);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     color: white;
-    background-color: aquamarine;
+    background-color: rosybrown;
 }
 button:hover{
-    background-color: aqua;
+    background-color: rgb(166, 128, 128)
 }
-
-.nombre-sitio {
-    margin-top: 2rem;
-    text-align: center;
-
+#tortaCantidad{
+    font-weight: bold;
 }
-.nombre-sitio span {
-    color: #e182a8;
-}
-
 
 
 .submenu {
@@ -54,7 +43,7 @@ button:hover{
 
     top:100%;
     z-index: 1;
-    background-color: rgb(240,240,240);
+    background-color: #FFD9E0;
     padding: 20px;
     min-height: 400px;
     min-width: 300px;
@@ -78,30 +67,37 @@ button:hover{
     color: white;
 }
 
-#encabezado {
-    background-color: rgb(240,240,240);
+header {
+    background-color: #FFD9E0;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
-    border-top: .1rem solid rgb(120,120,120);
-    border-bottom: .1rem solid rgb(120,120,120);
-
 }
 
+header .logo {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #090909;
+}
 
-#encabezado .container {
+header .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     z-index: 1;
 }
 
-#encabezado nav {
+header nav {
     text-align: center;
+    padding-bottom: 40px;
+    margin-right: 30px;
 }
-#encabezado nav a {
+header nav a {
     display: inline-block;
     margin-left: 15px;
     text-decoration: none;
@@ -109,42 +105,37 @@ button:hover{
     color: black;
 }
 
-#encabezado a {
+header a {
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
     color: black;
 }
 
-#encabezado a:hover {
+header a:hover {
     color: #6F7170;
 }
 
-#first {
-            background-size: 100% 100%;
-            position: relative;
-            overflow: hidden;
-            height: 80vh;
-            width: 95%;
-            margin: auto;
-            margin-top: 1rem !important;
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6);
-        }
-
-        .slides {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .slide {
-            min-width: 100%;
-            box-sizing: border-box;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-        }
+#first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(media/fondo3-first.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#first h1{
+    color: white;
+}
 
 
 /* inicio del codigo reciclado */
@@ -158,11 +149,13 @@ button:hover{
     display: flex;
     flex-direction: column;
     width: 80%;
+    /* background-color: antiquewhite; */
     padding: 20px;
     justify-content: center;
 }
 
 #popular-products{
+    /* background-color: darkcyan; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -182,6 +175,7 @@ button:hover{
 }
 
 #nav-products{
+    /* background-color: burlywood; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -205,39 +199,18 @@ button:hover{
 
 
 #third .container{
-    position: relative;
-    width: 100%;
-    height: 70vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.1),
-        rgba(0,0,0,0.1)
-        )
-        ,url(media/exhibicion-4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    overflow: hidden;
+    background-color: #F2E0DB;
     text-align: center;
-    
-}
-#third .texto{
-    font-size:  1.3em;
-    display: flex;
-    color: white;
-    flex-direction: column;
-    align-items: center;
+    padding: 200px 12px;
 }
 
 footer{
+    background-color: rgb(29,28,28);
     height: 350px;
 }
-footer h2{
-    color: black !important;
-}
 footer p{
-    color: black;
+    
+    color: rgb(120,120,120);
 }
 footer .container{
     width: 80%;
@@ -256,7 +229,7 @@ footer .container{
     color: rgb(120,120,120);
 }
 #c1-2 a{
-    color: black;
+    color: rgb(120,120,120);
     text-decoration: none;
 }
 #c1 h2{
@@ -268,32 +241,42 @@ footer .container{
     font-size: 1em;
 }
 #c2{
-    border-top: .1rem solid black;
     display: flex;
     justify-content: flex-start;
+    background-color: rgb(29,28,28);
 }
 
 
 
 @media (min-width: 850px){
-    #encabezado{
+    header{
+        position: fixed;
         width: 100%;
     }
 
-    #encabezado .container{
+    header .container{
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
     }
-    #encabezado nav{
+    header nav{
         flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
     }
-    #encabezado nav a{
+    header nav a{
         justify-content: center;
         padding-right: 20px;
     }
+    /* header .logo{
+        padding: 0 0 0 20px;
+        height: 60px;
+    } */
 
 
-    
+    #first{
+        height: 120vh;
+        background-position: center bottom;
+    }
     #first h1{
         font-size: 5em;
     }
