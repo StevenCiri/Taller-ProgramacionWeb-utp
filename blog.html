@@ -1,28 +1,54 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de UTPastry</title>
+    <title>Document</title>
     <link rel="stylesheet" href="blog.css">
 </head>
 <body>
+    
     <header>
+        <h1 class="nombre-sitio">Tienda <span> UTPastry </span></h1>
+    </header> 
+    <div id="encabezado">
         <div class="container">
-            <p class="logo">Blog UTPastry</p>
-            <!-- <img src="media/logo.jpg" alt="UtepiPastry" class="logo">  Logo imagen pero muy grande-->
             <nav>
                 <a href="index.html">Home</a>
-                <a href="nostros.html">Nosotros</a>                <a href="catalogo.html">Catalogo</a>
+                <a href="muestra.html">Nosotros</a>
+                <a href="catalogo.html">Catalogo</a>
                 <a href="blog.html">Blog</a>
                 <a href="contacto.html">Contacto</a>
-                <a class="no" href="#">
-                    <img src="media/cart.png" alt="" />
-                </a>
             </nav>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                        <img src="media/cart.png" id="img-carrito"/>
+                        <div id="carrito">
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+    
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div> 
         </div>
-    </header>
+    </div>
 
+<!-- Su codigo -->
+
+    <section></section>
     <main>
         <table class="blog-table">
             <tr>
@@ -119,7 +145,9 @@
             </tr>
         </table>
     </main>
+    <section></section>
 
+<!-- Fin de su codigo -->
     <footer>
         <div class="container">
             <div id="c1">
@@ -144,6 +172,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/app.js"></script>
     <script src="menuEffects.js"></script>
+    
 </body>
 </html>

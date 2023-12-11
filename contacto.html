@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>UTPastry - Contacto</title>
-        <link rel="stylesheet" href="contact.css" />
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <p class="logo">UTPastry</p>
-                <!-- <img src="media/logo.jpg" alt="UtepiPastry" class="logo">  Logo imagen pero muy grande-->
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="nostros.html">Nosotros</a>                    <a href="catalogo.html">Catalogo</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
-                    <a class="no" href="#">
-                        <img src="media/cart.png" alt="" />
-                    </a>
-                </nav>
-            </div>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTPastry - Contacto</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <h1 class="nombre-sitio">Tienda <span> UTPastry </span></h1>  
+    </header>
+    
+    <div id="encabezado">
+        <div class="container">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="nostros.html">Nosotros</a>
+                <a href="catalogo.html">Catalogo</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                        <img src="media/cart.png" id="img-carrito"/>
+                        <div id="carrito">
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+    
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+    </div>
 
-     <section id="mensajes">
-            <h2>Encuéntranos</h2>
-            <nav class="menu2">
+    <main>
+        <section id="mensajes">
+            <h2>¡Endulza tu Comunicación con Nosotros!</h2>
+            <nav class="menu">
                 <ul>
                     <li>
-                        <a href="../index.html"><strong>INICIO</strong></a>
+                        <a href="index.html"><strong>INICIO</strong></a>
                     </li>
                     <li>
                         <span class="rosa"><strong>/</strong></span>
@@ -39,23 +63,22 @@
                 </ul>
             </nav>
             <p>
-                ¡Nos emociona recibir noticias tuyas! Para contactarte con
-                nosotros, tienes a tu disposición una variedad de opciones:
+                Bienvenido a nuestro rincón dulce, donde las palabras son como capas de crema suave y cada mensaje es una deliciosa obra maestra. <br>
+                En UTPastry, no solo creamos pasteles, ¡sino también experiencias comunicativas deliciosas!
             </p>
         </section>
-        <main class="contacto-container">
+
+        <nav class="contacto-container">
             <section class="info-contacto">
                 <p>
                     <br />
                     <img
                         src="media/contact/ubicacion.png"
                         width="80"
-                        style="position: relative; left: 50px"
                         alt="Ícono de ubicación"
                     />
                     <br /><br />
-                    <strong>Dirección<span class="rosa">*</span></strong
-                    ><br />
+                    <strong>Dirección<span class="rosa">*</span></strong><br />
                     Av. Nicolás Ayllón con, Ate 15487
                 </p>
                 <p>
@@ -63,88 +86,85 @@
                     <img
                         src="media/contact/correo.png"
                         width="80"
-                        style="position: relative; left: 50px"
                         alt="Ícono de correo"
                     />
                     <br /><br />
-                    <strong
-                        >Correo Electrónico<span class="rosa">*</span></strong
-                    ><br />
-                    info@UTPastry.com
+                    <strong>Correo Electrónico<span class="rosa">*</span></strong><br />
+                    utpastry123@gmail.com
                 </p>
                 <p>
                     <br />
                     <img
                         src="media/contact/telefono.png"
                         width="80"
-                        style="position: relative; left: 50px"
                         alt="Ícono de teléfono"
                     />
                     <br /><br />
-                    <strong>Teléfono<span class="rosa">*</span></strong
-                    ><br />
-                    Lima: (01) 315 9600 <br />Provincias: 0801 19 600
+                    <strong>Teléfono<span class="rosa">*</span></strong><br />
+                    Lima: (01) 315 9600
                 </p>
             </section>
             <section class="formulario">
                 <h3>Envíanos un mensaje</h3>
-                <form action="enviar.php" method="post">
-                    <label for="nombre"
-                        >Nombre <span class="rosa">*</span></label
-                    >
-                    <input type="text" name="nombre" required />
-                    <br /><br />
-                    <label for="asunto"
-                        >Asunto <span class="rosa">*</span></label
-                    >
-                    <input type="text" name="asunto" required />
-                    <br /><br />
-                    <label for="correo"
-                        >Correo Electrónico<span class="rosa">*</span></label
-                    >
-                    <input type="email" name="correo" required />
-                    <br /><br />
-                    <label for="mensaje"
-                        >Mensaje<span class="rosa">*</span></label
-                    >
-                    <textarea
-                        id="mensaje"
-                        name="mensaje"
-                        rows="4"
-                        required
-                    ></textarea>
-                    <br /><br />
-                    <button type="submit">Enviar</button>
-                    <br /><br />
+                <p>Ya sea un halago o un deseo, tu mensaje nos inspira a seguir creando momentos memorables.</p><br>
+                <form action="enviar.php" method="post" novalidate>
+                    <label for="nombre">Nombre <span class="rosa">*</span></label>
+                    <input type="text" name="nombre" required /><br /><br />
+
+                    <label for="asunto">Asunto <span class="rosa">*</span></label>
+                    <input type="text" name="asunto" required /><br /><br />
+
+                    <label for="correo">Correo Electrónico<span class="rosa">*</span></label>
+                    <input type="email" name="correo" required /><br /><br />
+
+                    <label for="mensaje">Mensaje<span class="rosa">*</span></label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br /><br />
+
+                    <button type="submit">Enviar</button><br /><br />
                 </form>
             </section>
-        </main>
+        </nav>
+    </main>
 
-        <footer>
-            <div class="container">
-                <div id="c1">
-                    <div id="c1-1">
-                        <h2>UTPastry</h2>
-                        <p>Somos una pastelería dedicada a crear experiencias dulces y deliciosas para nuestros clientes. Nuestra pasión por la repostería nos impulsa a explorar nuevas tendencias y sabores, y a compartirlos contigo. En UTPastry, cada pastel es una obra maestra de sabor y diseño. ¡Permítenos endulzar tus momentos especiales!</p>
-                    </div>
-                    <div id="c1-2">
-                        <h2>ENLACES DE INTERÉS</h2>
-                        <ul>
-                            <li><a href="#">✔️ Suscríbete a nuestro Boletín</a></li>
-                            <li><a href="#">✔️ Términos y Condiciones</a></li>
-                            <li><a href="#">✔️ Servicio al Cliente</a></li>
-                            <li><a href="#">✔️ Libro de Reclamaciones</a></li>
-                            <li><a href="#">✔️ Trabaja con Nosotros</a></li>
-                            <li><a href="#">✔️ Catálogo UTPastry</a></li>
-                        </ul>
-                    </div>
+    <section id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.383060287677!2d-76.89472409956021!3d-12.019700311437994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c3c864ac48f5%3A0xed1bde4c798d786e!2sUTP!5e0!3m2!1ses-419!2spe!4v1694564427004!5m2!1ses-419!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section id="third">
+        <div class="container">
+            <div class="texto">
+                <h2>¡Cada Torta es única como tú!</h2>
+                <p>"En el vibrante universo de UTPastry, la repostería no es simplemente una combinación de <br>ingredientes, sino una forma de arte en la que cada creación lleva consigo la esencia de la dedicación y la pasión. <br>Bajo el distintivo nombre "UTPastry", nos enorgullece ofrecer una experiencia única, donde <br>los sabores excepcionales se entrelazan con la creatividad, dando vida a tortas que son <br>auténticas obras maestras comestibles.   "</p>
+                <button>LEER MÁS</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div id="c1">
+                <div id="c1-1">
+                    <h2>UTPastry</h2>
+                    <p>Somos una pastelería dedicada a crear experiencias dulces y deliciosas para nuestros clientes. Nuestra pasión por la repostería nos impulsa a explorar nuevas tendencias y sabores, y a compartirlos contigo. En UTPastry, cada pastel es una obra maestra de sabor y diseño. ¡Permítenos endulzar tus momentos especiales!</p>
                 </div>
-                <div id="c2">
-                    <p>&copy; 2023 UTPastry. Todos los Derechos Reservados.</p>
+                <div id="c1-2">
+                    <h2>ENLACES DE INTERÉS</h2>
+                    <ul>
+                        <li><a href="#">✔️ Suscríbete a nuestro Boletín</a></li>
+                        <li><a href="#">✔️ Términos y Condiciones</a></li>
+                        <li><a href="#">✔️ Servicio al Cliente</a></li>
+                        <li><a href="#">✔️ Libro de Reclamaciones</a></li>
+                        <li><a href="#">✔️ Trabaja con Nosotros</a></li>
+                        <li><a href="#">✔️ Catálogo UTPastry</a></li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-        <script src="validar.js"></script>
-        <script src="menuEffects.js"></script>
-    </body>
-    </html>
+            <div id="c2">
+                <p>&copy; 2023 UTPastry. Todos los Derechos Reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="validar.js"></script>
+    <script src="menuEffects.js"></script>
+</body>
+</html>
