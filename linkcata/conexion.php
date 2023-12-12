@@ -1,11 +1,12 @@
 <?php
+$host = "roundhouse.proxy.rlwy.net";
+$port = 23065; // Reemplaza esto con el puerto correcto de tu base de datos en la nube
 $user = "root";
-$pass = "4eZt@wR7yXu#2iS";
-$host = "localhost";
-$datab = "sqlweb";
+$pass = "162FfbhC6-Ga1eHGG5g66bGhHH4-bC5c";
+$datab = "railway";
 
-// Conectar al servidor de base de datos
-$connection = mysqli_connect($host, $user, $pass);
+// Conectar al servidor de base de datos con el puerto especificado
+$connection = mysqli_connect($host, $user, $pass, $datab, $port);
 
 // Verificar la conexión
 if (!$connection) {

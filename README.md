@@ -1,6 +1,11 @@
-# Proyecto-TallerdeProgramacion-utp# UTPastry - Tu Destino Dulce 🍰
+
+# Proyecto-TallerdeProgramacion-utp  UTPastry - Tu Destino Dulce 🍰
+
 
 ¡Bienvenido a UTPastry, donde tus sueños dulces se hacen realidad! 🎂
+
+![Pastel GIF](media/pastel.gif)
+
 
 ## Descripción del Proyecto
 
@@ -14,13 +19,23 @@ UTPastry es una tienda de pasteles que se esfuerza por llevar la felicidad a tra
 
 - **Entrega Rápida:** Nos esforzamos por hacer que tus momentos especiales sean aún más memorables. Ofrecemos entregas rápidas y confiables para que tus pasteles lleguen frescos y deliciosos.
 
-## Instalación
+![Gordito GIF](media/gordito.gif)
 
-1. Clona este repositorio.
+# Instalación
+
+1. Abrir la terminal y clonar el Repositorio en el Directorio de XAMPP/htdocs.
+
+    ```bash
+    cd C:/xampp/htdocs
+    ```
     ```bash
     git clone https://github.com/StevenCiri/Taller-ProgramacionWeb-utp.git
     ```
-2. Abre el archivo `index.html` en tu navegador.
+2. Asegúrese de tener XAMPP activado. Inicie Apache y MySQL desde el panel de control de XAMPP.
+
+    ![Apache y MySQL](media/Screenshot-1.png)
+
+3. La aplicación estará disponible en http://localhost/Taller-ProgramacionWeb-utp/index.html
 
 ## Contribución
 
@@ -34,6 +49,9 @@ UTPastry es una tienda de pasteles que se esfuerza por llevar la felicidad a tra
 - Sitio Web: [https://www.utpastry.com](https://www.utpastry.com)
 - Redes Sociales: [@UTPastry en Instagram](https://www.instagram.com/utpastry)
 
+## Agradecimientos
+
+Quisieramos expresar nuestro mas sincero agradecimiento al Profesor Ingeniero UNI Adolfo Jorge Prado Ventocilla por su orientación, apoyo, conocimientos invaluable y valiosos consejos durante el desarrollo de este proyecto.
 
 ---
 
